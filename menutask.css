@@ -1,0 +1,21 @@
+
+body{
+  background-image:url('pic.png');
+  background-repeat:no-repeat;
+  background-position: center ;
+  background-size: cover;
+}
+
+.menu{
+    background-color: #d4e2e5e2;
+    color: rgb(33, 33, 31);
+    font-family:fantasy;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    height: 400px;
+    width: 300px;
+  }
+  
+  
+  

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changehead(){
+            document.getElementById('head').innerText="Welcome to JS";
+        }
+        function changepara(){
+         document.getElementById('para').innerHTML="<h2>Zero</h2>";   
+        }
+    </script>
+</head>
+<body>
+    <h1 id="head">Hello World</h1>
+    <p id="para">Hello,Hii</p>
+    <button onclick="changehead()">change heading</button>
+    <button onclick="changepara()">change paragraph</button>
+</body>
+</html>

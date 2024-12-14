@@ -1,0 +1,102 @@
+let h2=document.createElement("h2");
+ h2.innerText="<marquee> welcome to ameerpet tech </marquee> ";
+ document.getElementById("root").appendChild(h2);
+
+//////........................................................................
+let React=require("react");
+let ReactDOM=require("react-dom");
+  ReactDOM.render(<h1>welcome to react</h1>,  //(WHAT TO SHOW)
+    document.getElementById("root"),  //INDEX.HTML(DIV) (where to show)
+ ()=>{
+    console.log("rendering completed"); //OPTIONAL(callback function)
+ })
+
+//////...............................................................................
+import React from 'react';
+import ReactDOM from 'react-dom';
+ReactDOM.render(<h1>welcome to react</h1>, document.getElementById("root")) 
+
+/////.................................................................................
+import React from 'react';
+import ReactDOM from 'react-dom';
+ReactDOM.render([<h1>First message</h1>,  //[elements],where to show
+    <h2>second message</h2>,                       //render only allow single jsx element to add more elements use array[] 
+    <p>hello</p>],document.getElementById('root'))
+
+    //////..............................................................
+import React from 'react';
+import ReactDOM from 'react-dom';
+ReactDOM.render(<div>
+    <h1>first</h1>
+    <h2>second message</h2>
+<p>hello</p>
+</div>,document.getElementById('root'))
+
+/////........................(using Fragment)
+import React from 'react';
+import ReactDOM from 'react-dom';
+ReactDOM.render(<React.Fragment>
+    <h1>welcome to Fragment</h1>
+    <h2>second message</h2>
+<p>hello</p>
+</React.Fragment>,document.getElementById('root'))
+
+////...................................................
+import React from 'react';
+import ReactDOM from 'react-dom';
+ReactDOM.render(<>
+    <h1>welcome to </h1>
+    <h2>second message</h2>
+<p>hello</p>
+</>,document.getElementById('root'))
+
+//////....................................................
+ React from "react";
+import ReactDOM from "react-dom/client";
+let name="Hero";
+let greet="Good Morning";
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.Fragment>
+    <h1>Hello,mr.{name}</h1>
+    <h1>{greet},mr.Hero</h1>
+  </React.Fragment>
+);
+//////.............................................................
+//internal css inn react//
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+let message=" ";
+const cd=new Date();
+let styling={};
+if(cd.getHours()>=1 && cd.getHours()<=12){
+  message="Good Morning";
+  styling={
+    color:"blue",
+    backgroundColor:"orange"
+  }
+}
+else if(cd.getHours()>=12 && cd.getHours()<=16){
+    message="Good Afternoon";                                                                                                           
+    styling={
+        color:"red",
+        backgroundColor:"orange"
+      }
+}
+else if(cd.getHours()>=16 && cd.getHours()<=19){
+    message="Good Evening";
+    styling={
+        color:"blue",
+        backgroundColor:"yellow"
+      }
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<h1>Hello, <span style={styling}> {message} </span> </h1>);
+////.....................................................................................................
+//COMPONENTS//
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+ReactDOM.createRoot(document.getElementById("root")).render(
+    <> 
+    <App/>
+    </>
+      );

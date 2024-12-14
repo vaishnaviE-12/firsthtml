@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Propeties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            text-align: center;
+            display: inline-block;
+            border-radius: 50%;
+
+        }
+        
+
+        #box1 {
+            background-color: rgb(255, 34, 45);
+            padding: 15px;
+            margin: 25px;
+            position: static;
+            top: 5%;
+            right: 10%;
+            left: 80px;
+            bottom: 50px;
+
+        }
+
+        #box2 {
+            background-color: rgb(34, 192, 255);
+            padding: 15px;
+            padding: 15px;
+            margin: 25px;
+            position: relative;
+            top: 1%;
+            right: 5%;
+            left: 50px;
+            bottom: 40px;
+        }
+
+        #box3 {
+            background-color: rgb(196, 255, 34);
+            padding: 15px;
+            margin: 25px;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            bottom: 24px;
+            left: 20px;
+        
+
+        }
+
+        #box4 {
+            background-color: rgb(255, 122, 34);
+            position: fixed;
+            text-align: center;
+            width: 100vw;
+            bottom: 0;
+            left: 0;
+        }
+        #box5 {
+            background-color: rgb(255, 122, 34);
+            position: sticky;
+            bottom: 50px;
+            left: 30px;
+            border-radius: 80%;
+            width: 200vw;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Position Properties</h1>
+    <div id="box1">
+        Hero1
+    </div>
+    <div id="box2">Hero2</div>
+    <div id="box3">Hero3</div>
+    <div id="box4">Hero4</div>
+    <div id="box5">hero5</div>
+
+</body>
+</html>

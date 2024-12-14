@@ -1,0 +1,17 @@
+.one{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 100px;
+  border-bottom: 1px groove white;
+  color:rgba(41, 40, 40, 0.79);
+  margin-left: 400px;
+}
+.top1{
+   height: 45px;
+   width: 160px; 
+}
+.top1img{
+    
+}

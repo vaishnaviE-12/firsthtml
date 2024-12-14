@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html>
+<head>
+ <title></title>
+ <script>
+ function green() {
+ document.body.style.color = "orange";
+ var h = document.getElementById("im");
+ h.innerText = "You fellow, You changed me to Green. Shut!";
+ }
+ function sizechange() {
+document.body.style.fontSize = "50px";
+ var a = document.getElementById("im");
+ a.innerText = "This is my Transformation";
+}
+
+function backround() {
+document.body.style.backgroundColor = "blueviolet";
+ var a = document.getElementById("im");
+ a.innerText = "This is My Background";
+}
+
+ function discipline() {
+document.body.style.textAlign = "center";
+ var a = document.getElementById("im");
+ a.innerText = "See where I'm";
+}
+ </script>
+ </head>
+ <body>
+    <h1 id="im">Please Don't Click Below Buttons, They Will Change Me</h1>
+     <button onClick="green()">orange color</button>
+     <button onClick="sizechange()">I go to gym</button>
+     <button onClick="backround()">You don't Know My Background</button>
+     <button onClick="discipline()">I'm a good button</button>
+    </body>
+    </html>

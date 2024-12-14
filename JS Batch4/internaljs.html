@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var number1=document.getElementsById("num1").value;
+            var number2=document.getElementsById("num2").value;
+            var result=number1+number2;
+            document.write(result);
+        }
+    </script>
+</head>
+<body>
+   <label>Enter num1:</label>
+   <input type="text" placeholder="Enter number" id="num1"/>
+   <label>Enter num2:</label>
+   <input type="text" placeholder="Enter number" id="num2"/>
+   <button onclick=" add()">Add</button> 
+   <form onsubmit="add()">
+    <label>Enter num1:</label>
+   <input type="text" placeholder="Enter number" id="num1"/>
+   <label>Enter num2:</label>
+   <input type="text" placeholder="Enter number" id="num2"/>
+   <input type="submit" value="add"/>
+</form>
+</body>
+</html>
